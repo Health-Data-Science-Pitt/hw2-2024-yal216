@@ -1,0 +1,39 @@
+---
+title: 'Homework 2'
+author: 'Yongseok Park'
+date: "9/19/2023"
+output:
+  bookdown::html_document2: 
+    code_folding: "hide"
+    toc: yes
+    toc_float: yes
+    number_sections: no
+---
+
+<!-- You may add message=FALSE, warning=FALSE in knitr -->
+<!--     options to suppress messages and warnings -->
+
+```{r setup, include=FALSE, message=F}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+
+```
+
+# Data of Firearm Deaths by states in 2016
+
+```{r}
+library(tidyverse)
+theme_set(theme_bw())
+
+library(readxl)
+library(ggrepel)
+
+data <- read_excel("FirearmDeath2016.xlsx")
+```
+
+
+### Rate of Firearm Deaths vs State GDP per Capita
+
+
+### Rate of Firearm Deaths vs Background Check and Safety Rating
+
+
